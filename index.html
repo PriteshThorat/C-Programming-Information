@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>C Programming</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <main id="main-doc">
+      <section id="Program_Logic_Development" class="main-section">
+        <header>Program Logic Development</header>
+        <p class="center">Algorithm is a stepwise set of instructions written to perform a specific task</p>
+        <ul>
+          <li><b>Clear and Unambiguous</b>: Algorithm should be clear and unambiguous. Each of its steps should be clear in all aspects and must lead to only one meaning.</li>
+          <li><b>Well-Defined Inputs</b>: If an algorithm says to take inputs, it should be well-defined
+inputs. </li>
+          <li><b>Well-Defined Outputs</b>: The algorithm must clearly define what output will be yielded and it should be well-defined as well. </li>
+          <li><b>Finite-ness</b>: The algorithm must be finite, i.e. it should not end up in an infinite loops or similar. </li>
+          <li><b>Feasible</b>: The algorithm must be simple, generic and practical, such that it can be executed upon will the available resources. It must not contain some future
+technology, or anything. </li>
+          <li><b>Language Independent</b>: The Algorithm designed must be language-independent, i.e. it must be just plain instructions that can be implemented in any language, and yet the
+output will be same, as expected. </li>
+        </ul>
+        <div>
+          <p class="left">Example:</p>
+          <p class="left">Write an algorithm to calculate the addition of two given numbers.</p>
+          <ul class="no-bulletin">
+            <li>Step 1: Start</li>
+            <li>Step 2: Read two numbers A and B </li>
+            <li>Step 3: Add A and B and store result in C </li>
+            <li>Step 4: Display C </li>
+            <li>Step 5: Stop </li>
+          </ul>
+        </div>
+        <table class="structure" border="1">
+          <thead>
+            <tr>
+              <th>Symbol</th>
+              <th>Name</th>
+              <th>Function</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKPPRo-hYhy5pPfoFKJHRfPPHI5aS5_UcI6A&s"></td>
+              <td>Process</td>
+              <td>Indicates any type of internal operation inside the Processor or Memory</td>
+            </tr>
+            <tr>
+              <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAACmCAMAAAA252APAAAAYFBMVEW01+3///8Ncb7I4PE7i8oqhMdwrdkee8NRmNAYeMHf7ff6/P5Cks242O12s9yu0erw9/vp8/mVxOR9t95xqdijzenZ6fZYn9NXm9Ffo9XP5PMlf8WRuuCOwOJ3rdk1h8gzgo3hAAADMUlEQVR4nO3Y0VJaQRBFUdICgoIkKipR4v//pckreGa670zVpO7u8wXTq2pe9uJH7tstRj/gf13CiCWMWMKIJYxYwogljFjCiCWMWMKIJYxYwogljFjCiCWMWMKIJYxYwogljFjCiE2B+VjOccd2mM12Nb/ZXTPMve0Ws9vq8+LKCTB7W48+o/uO9qcd5sEeR9/RfWs7tMPs3kef0X8b+9kM88s2o8/ov9vd5ZlxmKM9jD6j+x7tqR3m2Y6j7+i+Z9u3w3yuRp/Rf7vt1ZlhmBd7HX1G/23f2mH+fsfRZ3Tf2c7tMK92GH1H953sdzvM7XL0Gf23fL++MwpzY6fRZ3TfwU7tMB92Hn1H9z3Z8frQKMxmO/qM/nu7TA4TYBjJYQIMIzlMgGEkhwkwjOQQh4EkhzgMJDnEYSDJIQ4DSQ5hGEpyCMNQkkMYhpIcwjCU5BCFwSSHKAwmOURhMMkhCMNJDkEYTnIIwnCSQxCGkxxiMKDkEIMBJYcYDCg5xGBAySEEQ0oOIRhScgjBkJJDCIaUHCIwqOQQgUElhwgMKjkEYFjJIQDDSg4BGFZyCMCwkoMfBpYc/DCw5OCHgSUHPwwsObhhaMnBDUNLDm4YWnJww9CSgxcGlxy8MLjk4IXBJQcnDC85OGF4ycEJw0sOThhecvDBAJODDwaYHHwwwOTggwEmBxcMMTm4YIjJwQVDTA4uGGJy8MAgk4MHBpkcPDDI5OCAYSYHBwwzOThgmMnBAcNMDnUYaHKow0CTQx0GmhzqMNDkUIWhJocqDDU5VGGoyaEKQ00ONRhscqjBYJNDDQabHCow3ORQgeEmhwoMNzlUYLjJoQwDTg5lGHByKMOAk0MZBpwcijDk5FCEISeHIgw5ORRhyMmhBINODiUYdHIowaCTQwGGnRwKMOzkUIBhJ4cCDDs5aBh4ctAw8OSgYeDJQcOs2MlBwtCTg4ShJwcJQ08OEoaeHBQMPjkoGHxyUDD45CBg7m23nt1Wy5jLdzB7m+MiyUHA3Mxz7TC5f0sYsYQRSxixhBFLGLGEEUsYsYQRSxixhBFLGLGEEUsYsYQRSxixhBFLGLGEEUsYsS9DQH6lIOFdzQAAAABJRU5ErkJggg=="></td>
+              <td>Input/Output</td>
+              <td>Used for any Input/Output (I/O) operation. Indicates that the computer is to obtain data or output results</td>
+            </tr>
+            <tr>
+              <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG2A26EsXUj0Z8l9MUFbbKqTQPMmh0aqr0qw&s"></td>
+              <td>Decision</td>
+              <td>Used to ask a question that can be answered in a binary format (Yes/No, True/False)</td>
+            </tr>
+            <tr>
+              <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrrm6c0mQeKjuQLY2A6gpMvcc549NsMaOrRQ&s"></td>
+              <td>Connector</td>
+              <td>Allows the flowchart to be drawn without intersecting lines or without a reverse flow.</td>
+            </tr>
+            <tr>
+              <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOY3ziKEEs2AyXvylpA5zS3SoJf75yfnI6tw&s"></td>
+              <td>Predefined Process</td>
+              <td>Used to invoke a subroutine or an Interrupt program</td>
+            </tr>
+            <tr>
+              <td><img src="data:image/png;base64,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"></td>
+              <td>Terminal</td>
+              <td>Indicates the starting or ending of the program, process, or interrupt program</td>
+            </tr>
+            <tr>
+              <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAvVBMVEX///88hf83g/8ygf8sfv/7/f8AAAD1+f89hv9pof/l7/8/if/t9P+30f9Tk/+Suf/S3//W4//l5eYAEx+Pk5aiw/93pv+dvv+Frf9fmf9Ijf/b5/+8vsHF2v+Stf/R3v95fH8QHCaqyP8aISnw8fEABRSrrbA7P0Svy//09fUvNDrQ0dLY2tvm5+haYGaZnJ9maGtKUFd/qv8beP8lKzGHi5B7f4S9wMJDR0xQVlyipKdtcnYAAAsADBtkZ2r6nQlFAAADtklEQVR4nO3bDVOiWgDG8WMKvVpJWqviFZUgXoTcq6nR9ft/rD2gsHW1ve6dEJf5/6Yc0uP4PHHOQWdKCAAAAAAAAAAAAAAAAAAAAAAAAAAHd1Vv9U+LDpGrXqfafip1xWGtUr0udcVeu1ryiqf1pOLwqugg+VlX7LTKXvGEin82WfGk5BWV/n3pK96WvqJo3FfKUFE5TV1dbHQbiW5j2C6oorKVKQ0l9TL11NMw9ZD5K/Ut8/0+dZ7qVPKt2G0Nh60s0812qB2ZztuZ60wndZapbjl5d5iqxKrtRl4Ne2edzmWWaUeCHZneqfyun0+txl/VrGE3t4a1/UNtn5N3arVqLbnZoXK50clOefvDLK22e7m9B6//vSvSu1CXWaifs/R7NoVvUg/D1towW5r12/7a7W22ghvd1MXm9kE2rF7XlbwKJuvwKcvUu03tyNS92HaVybZLJbPP6/faScEcP0UpH0Ll9zqfvHo994IFy/8MFqyfXO2fDj51DqZ/LrfRs1a5z2Dl7OFPf0v6udIX7N6XveC3M9mwxAVF71q+Ib25KDpGjhrntZNSFxRKY1gv8RSNKaflvdADAAAAAAAAAAAAAAAAAADszSk6wP9haglTONqv/yRUDjGb3oFSfaVInbquOw0dXdV+OVCdCW/0cqBUX8mwdV8yxXy0bvjZmbxrCjEfHy7YlzEmm1OnJw3H3ly2FaYvj534SPibVnFDOVPlz77nJc9xfG8e33PkPjb0JvbCjTRhxVPWUuNJqW5mpmzoqE1hqtFk4dryN+BYU3uxaB797mMsvLGmjZWkoW8H3lh3I+EMLCGC6VR2Vv31wLjhIJQNF7rp2Sv5yGCm+aH9Wmz+/2aMlkEQvJhJw9k0rmO9mWKyFGLQVMfiZbQZmDWUs9VpLhTTWJmOo0VRken3YbizMAxf1w1Xy3jOaYO5CB8V7828s8TI2AxMGz7qcjeybHPsBq9h2FwGxz5NjclmJ4kbLqM47nigC+3Nm01EEJhqegl839CJG9r2c+zoF+KHnSZaxFujN5Ct7JnbFNbAUtOBWw2Xs/ju4//PkQ8N5yPdEWbkythNW24xjrp4Tgf+u6Fci74itHBeVPJ9GYu04Z08mNnh/CXZHv1HuZEKW9XTgY+y4T/x1SJp6JpCCwJLf7GtYnLvz2pu1qFnmPEmuQqe15mNMH40yq7ohi4U+e0Ycgor85lcfb6xWkVHX3CLY/7GylKOfZcBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAofwAUbNx6KW49eEAAAAASUVORK5CYII="></td>
+              <td>Flow Lines</td>
+              <td>Shows direction of flow.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="Basic_of_C_Programming" class="main-section">
+        <header>Basic of C Programming</header>
+        <div>
+          <p class="left"><b>Features of C Language</b></p>
+          <p class="left">C is the widely used language. It provides many features that are given below</p>
+          <ol>
+            <li>Simple</li>
+            <li>Machine Independent or Portable </li>
+            <li>Mid-level programming language</li>
+            <li>Structured programming language</li>
+            <li>Rich Library </li>
+            <li>Memory Management</li>
+            <li>Fast Speed </li>
+            <li>Pointers </li>
+            <li>Recursion</li>
+            <li>Extensible </li>
+          </ol>
+        </div>
+        <div>
+          <p class="left"><b>Basic Structure of C Program</b></p>
+          <table border="1" class="structure">
+            <thead>
+              <tr>
+                <th>Basic Structure of C Program</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Documentaion Section</td>
+              </tr>
+              <tr>
+                <td>Link Section</td>
+              </tr>
+              <tr>
+                <td>Definition Section</td>
+              </tr>
+              <tr>
+                <td>Global Declration Section</td>
+              </tr>
+              <tr>
+                <td>main() Function Section<br>{<br>Declaration Part<br>Executable Part<br>}
+                </td>
+              </tr>
+              <tr>
+                <td>Subprogram Section<br>Function 1<br>Function 2<br>Function 3<br>-<br>-<br>-<br>Function n</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="code">
+          <p class="left">First C Program</p>
+          <code>#include &lt;stdio.h&gt;<br>int main()<br>{<br>printf("Hello C Language");<br>return 0;<br>}</code>
+          <p class="left">Save the file with name first.c</p>
+          <p class="left">Output:</p>
+          <p class="left">Hello C Language</p>
+        </div>
+      </section>
+      <section id="Control_Structures" class="main-section">
+        <header>Control Structures</header>
+        <div>
+          <p class="left">Decision making statement:</p>
+          <ol>
+            <li>if statement</li>
+            <li>if-else statement </li>
+            <li>if-else-if ladder </li>
+            <li>Nested if-else statement</li>
+            <li>switch statement</li>
+            <li>conditional operator statement (? : operator) </li>
+          </ol>
+        </div>
+        <div class="code">
+          <h3>if statement:-</h3>
+          <h3>Syntax:</h3>
+          <code>if(cond<sup>n</sup>)<br>{<br>//Statement<br>}</code>
+          <h3>Code:</h3>
+          <code>#include &lt;stdio.h&gt;<br>void main()<br>{<br>int x, y;<br>x = 15;<br>y = 13;<br>if (x > y )<br>{<br>printf("x is greater than y");<br>}<br>} </code>
+        </div>
+        <div class="code">
+          <h3>if-else statement:-</h3>
+          <h3>Syntax:</h3>
+          <code>if(expression)<br>{<br>statement block1;<br>}<br>else<br>{<br>statement block2;<br>}</code>
+          <h3>Code:</h3>
+          <code>#include &lt;stdio.h&gt;<br>void main( )<br>{<br>int x, y;<br>x = 15;<br>y = 18;<br>if (x > y )<br>{<br>printf("x is greater than y");<br>}<br>else<br>{<br>printf("y is greater than x");<br>}<br>}</code>
+        </div>
+        <div  class="code">
+          <h3>if-else-if ladder:-</h3>
+          <h3>Syntax:</h3>
+          <code>if (test expression1) {<br>// statement(s)<br>}<br>else if(test expression2) {<br>// statement(s)<br>}<br>else if (test expression3) {<br>// statement(s)<br>}<br>.<br>.<br>else {<br>// statement(s)<br>}</code>
+          <h3>Code:</h3>
+          <code>#include &lt;stdio.h&gt;<br>int main() {<br>int number1, number2;<br>printf("Enter two integers: ");<br>scanf("%d %d", &number1, &number2);<br>//checks if the two integers are equal.<br>if(number1 == number2) {<br>printf("Result: %d = %d",number1,number2);<br>}<br>//checks if number1 is greater than number2.<br>else if (number1 > number2) {<br>printf("Result: %d > %d", number1, number2);<br>}<br>//checks if both test expressions are false<br>else {<br>printf("Result: %d < %d",number1, number2);<br>}<br>return 0;<br>}</code>
+        </div>
+        <div class="code">
+          <h3>Nested if-else ladder:-</h3>
+          <h3>Syntax:</h3>
+          <code>if( expression )<br>{<br>if( expression1 )<br>{<br>statement block1;<br>}<br>else<br>{<br>statement block2;<br>}<br>}<br>else<br>{<br>statement block3;<br>}</code>
+          <h3>Code:</h3>
+          <code>#include &lt;stdio.h&gt;<br>void main()<br>{<br>int a, b, c;<br>printf("Enter 3 numbers...");<br>scanf("%d%d%d",&a, &b, &c);<br>if(a > b)<br>{<br>if(a > c)<br>{<br>printf("a is the greatest");<br>}<br>else<br>{<br>printf("c is the greatest");<br>}<br>}<br>else<br>{<br>if(b > c)<br>{<br>printf("b is the greatest");<br>}<br>else<br>{<br>printf("c is the greatest");<br>}<br>}<br>}</code>
+        </div>
+        <div class="code">
+          <h3>switch statement:-</h3>
+          <h3>Syntax:</h3>
+          <code>switch (expression)<br>{<br>case constant1:<br>// statements<br>break;<br>case constant2:<br>// statements<br>break;<br>.<br>.<br>.<br>default:<br>// default statements<br>}</code>
+          <h3>Code:</h3>
+          <code>#include &lt;stdio.h&gt;<br>int main() {<br>char operator;<br>double n1, n2;<br>printf("Enter an operator (+, -, *, /): ");<br>scanf("%c", &operator);<br>printf("Enter two operands: ");<br>scanf("%lf %lf",&n1, &n2);<br>switch(operator)<br>{<br>case '+':<br>printf("%.1lf + %.1lf = %.1lf",n1, n2, n1+n2);<br>break;<br>case '-':<br>printf("%.1lf - %.1lf = %.1lf",n1, n2, n1-n2);<br>break;<br>case '*':<br>printf("%.1lf * %.1lf = %.1lf",n1, n2, n1*n2);<br>break;<br>case '/':<br>printf("%.1lf / %.1lf = %.1lf",n1, n2, n1/n2);<br>break;<br>// operator doesn't match any case constant +, -, *, /<br>default:<br>printf("Error! operator is not correct");<br>}<br>return 0;<br>}</code>
+        </div>
+        <div class="code">
+          <h3>conditional operator statement (? : operator):-</h3>
+          <h3>Syntax:</h3>
+          <code>(cond<sup>n</sup>)? expression 1: expression2;</code>
+          <h3>Code:</h3>
+          <code>#include&lt;stdio.h&gt;<br>int main()<br>{<br>int x, y, z, large;<br>clrscr();<br>printf(" Enter any three integer numbers for x, y, z : ") ;<br>scanf("%d %d %d", &x, &y, &z) ;<br>large = x > y ? ( x > z ? x : z) : (y > z ? y : z) ;<br>printf("\n\n Largest or biggest or greatest or maximum among 3 numbers using Conditional ternary Operator : %d", large) ;<br>getch();<br>return 0;<br>}</code>
+        </div>
+      </section>
+      <section id="Array_&_Structure" class="main-section">
+        <header>Array & Structure</header>
+        <p class="left">The declaration form of one-dimensional array is<br>Data_type array_name [size];<br>e.g<br>int array[3] = {1,2,3);</p>
+        <div>
+          <p class="left"><b>Characterstics of Array in C</b></p>
+          <ol>
+            <li>An array holds elements that have the same data type</li>
+            <li>Array elements are stored in subsequent memory locations. </li>
+            <li>Two-dimensional array elements are stored row by row in subsequent memory locations. </li>
+            <li>Array name represents the address of the starting element. </li>
+            <li>Array size should be mentioned in the declaration. Array size must be a constant expression and not a variable. </li>
+          </ol>
+        </div>
+        <div class="left">
+        <p><b>Declaration of C Array</b></p>
+        <p>We can declare an array in the c language in the following way.<br>data_type array_name[array_size];<br>Now, let us see the example to declare the array.<br>int marks[5];</p>
+        <p><b>Initialization of C Array</b></p>
+        <p>The simplest way to initialize an array is by using the index of each element. We can initialize each element of the array by using the index. Consider the following example.<br>marks[0]=80;//initialization of array<br>marks[1]=60;<br>marks[2]=70;<br>marks[3]=85;<br>marks[4]=75;</p>
+        <p>Example:</p>
+        <code>#include&lt;stdio.h&gt;<br>int main(){<br>int i=0;<br>int marks[5];//declaration of array<br>marks[0]=80;//initialization of array<br>marks[1]=60;<br>marks[2]=70;<br>marks[3]=85;<br>marks[4]=75;
+//traversal of array<br>for(i=0;i<5;i++){<br>printf("%d \n",marks[i]);<br>}//end of for loop<br>return 0;<br>}</code>
+        </div>
+        <div class="left">
+          <p><b>Structure Syntax:</b></p>
+          <code>struct structure_name<br>{<br>data_type member1;<br>data_type member2;<br>.<br>.<br>data_type memeberN;<br>};</code>
+          <p><b>Example:</b></p>
+          <code>struct employee<br>{<br>int id;<br>char name[20];<br>float salary;<br>};</code>
+        </div>
+      </section>
+      <section id="Functions" class="main-section">
+        <header>Functions</header>
+        <div class="left">
+          <p><b>Syntax: </b></p>
+          <code>#include&lt;stdio.h&gt;<br>/*Function prototypes*/<br>myfunc();<br>main()<br>{<br>myfunc();<br>}<br>/*Function Defination*/<br>myfunc()<br>{<br>printf("Hello, this is a test\n");<br>}</code>
+        </div>
+        <div class="left">
+          <p><b>Need of functions in C </b></p>
+          <p>There are the following advantages of C functions.</p>
+          <ul>
+            <li>By using functions, we can avoid rewriting same logic/code again and again in a
+program. </li>
+            <li>We can call C functions any number of times in a program and from any place in a
+program.</li>
+            <li>We can track a large C program easily when it is divided into multiple functions. </li>
+            <li>Reusability is the main achievement of C functions. </li>
+            <li>However, Function calling is always a overhead in a C program. </li>
+          </ul>
+        </div>
+        <table border="1" class="structure">
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Function</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.</td>
+              <td>ceil(number)</td>
+              <td>rounds up the given number. It returns the integer value which is greater than or equal to given number. </td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>floor(number)</td>
+              <td>rounds down the given number. It returns the integer value which is less than or equal to given number. </td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>sqrt(number)</td>
+              <td>returns the square root of given number. </td>
+            </tr>
+            <tr>
+              <td>4.</td>
+              <td>pow(base, exponent)</td>
+              <td>returns the power of given number.</td>
+            </tr>
+            <tr>
+              <td>5.</td>
+              <td>abs(number)</td>
+              <td>returns the absolute value of given number.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="left">
+          <p><b>Example:</b></p>
+          <code>#include&lt;stdio.h&gt;<br>#include &lt;math.h&gt;<br>int main(){<br>printf("\n%f",ceil(3.6));<br>printf("\n%f",ceil(3.3));<br>printf("\n%f",floor(3.6));<br>printf("\n%f",floor(3.2));<br>printf("\n%f",sqrt(16));<br>printf("\n%f",sqrt(7));<br>printf("\n%f",pow(2,4));<br>printf("\n%f",pow(3,3));<br>printf("\n%d",abs(-12));<br>return 0;<br>}</code>
+        </div>
+      </section>
+      <section id="Pointers" class="main-section">
+        <header>Pointers</header>
+        <div class="left">
+          <p><b>Declaring a pointer</b></p>
+          <code>int *a;//pointer to int<br>char *c;//pointer to char</code>
+          <p><b>Example:</b></p>
+          <code>#include&lt;stdio.h&gt;<br>int main(){<br>int number=50;<br>int *p;<br>p=&number;//stores the address of number variable<br>printf("Address of p variable is %x \n",p); // p contains the address of the number therefore printing p gives the address of number.<br>printf("Value of p variable is %d \n",*p); // As we know that * is used to dereference a pointer therefore if we print *p, we will get the value stored at the address contained by p.<br>return 0;<br>}</code>
+        </div>
+        <div class="left">
+          <p><b>Advantage of pointer</b></p>
+          <ol>
+            <li>Pointers reduce the length and complexity of a program.</li>
+            <li>They increase execution speed. </li>
+            <li>A pointer enables us to access a variable that is defined outside the function. </li>
+            <li>Pointers are more efficient in handling the data tables. </li>
+            <li>The use of a pointer array of character strings results in saving of data storage space in
+memory</li>
+            <li>It supports dynamic memory management. </li>
+          </ol>
+          <p><b>Usage of pointer</b></p>
+          <ol>
+            <li>Dynamic memory allocation</li>
+            <li>Arrays, Functions, and Structures</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+    <nav id="navbar">
+      <header>C Programming</header>
+      <br>
+      <div class="button">
+      <button>
+        <a href="#Program_Logic_Development" class="nav-link">Program Logic Development</a>
+        </button>
+      <br>
+      <button>
+      <a href="#Basic_of_C_Programming" class="nav-link">Basic of C Programming</a>
+      </button>
+      <br>
+      <button>
+      <a href="#Control_Structures" class="nav-link">Control Structures</a>
+      </button>
+      <br>
+      <button>
+      <a href="#Array_&_Structure" class="nav-link">Array & Structure</a>
+      </button>
+      <br>
+      <button>
+      <a href="#Functions" class="nav-link" src="">Functions</a>
+      </button>
+      <br>
+      <button>
+      <a href="#Pointers" class="nav-link">Pointers</a>
+      </button>
+      </div>
+    </nav>
+  </body>
+</html>
