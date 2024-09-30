@@ -14,7 +14,7 @@
     position: absolute;
     right: 0px;
     top: 0px;
-    overflow: hidden
+    overflow: hidden;
   }
   #navbar a,header{
     margin: 18px;
@@ -49,6 +49,9 @@
   table img{
     height: 70px;
     width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .structure{
     width: 90%;
@@ -64,15 +67,42 @@
   a{
     text-decoration: none;
   }
-  @media(min-width: 1000px){
-    #main-doc{
-      width: 80%;
-    }
-    #navbar{
-      width: 20%;
-    }
-  }
+
   header{
     font-size: 24px;
     font-weight: bold;
+  }
+
+  @media (max-width: 600px) {
+    #navbar {
+      display: none;
+    }
+  
+    #main-doc {
+      width: 100%;
+    }
+  
+    h2, header, #navbar header {
+      font-size: 18px;
+    }
+  
+    p, ul, ol {
+      font-size: 16px;
+    }
+  
+    button {
+      width: 95%;
+    }
+  
+    table img {
+      object-fit: contain;
+    }
+  
+    .structure, .code, h3 {
+      margin: 10px;
+    }
+  
+    code {
+      font-size: 12px;
+    }
   }
